@@ -54,7 +54,7 @@ public class InstructionMemory {
 					Inst+=String.format("%6s", Integer.toBinaryString(Integer.parseInt(content[2]))).replace(' ', '0');
 				}
 				else {
-					if(Integer.parseInt(content[2])>31 || Integer.parseInt(content[2])<-32)throw new Exception("The Immediate is greater than signed 6 bits");
+					//if(Integer.parseInt(content[2])>31 || Integer.parseInt(content[2])<-32)throw new Exception("The Immediate is greater than signed 6 bits");
 				    int number = Integer.parseInt(content[2]);
 				    if (number >= 0) Inst+=String.format("%6s", Integer.toBinaryString(number)).replace(' ', '0');
 				    else {

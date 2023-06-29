@@ -50,7 +50,7 @@ public class Processor {
 		}
 		else if(opcode==4) {   //BEQZ
 			if(GeneralPurposeRegisters[R1Address]==0) {
-				Pc=(byte) (dm.readData(2047)-3);
+				Pc=(byte) (dm.readData(2047)-2);
 				Pc=(byte) (Pc+(R2AddorImm+1));//BEQZ
 				branched=true;
 			}

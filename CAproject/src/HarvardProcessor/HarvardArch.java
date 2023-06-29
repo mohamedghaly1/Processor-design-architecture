@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class HarvardArch {
 	
-	private static final String Program_File = "program.txt";
+	private static final String Program_File = "E://CA/Project//Test Files//Package 4/Program4.txt";
 	
 	 Processor p= new Processor();
 	 InstructionMemory im = new InstructionMemory();
